@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+
+ 
+  <script src="js/responsiveslides.min.js"></script>
+
+</head>
+<body>
+  
+  <!--Start Page-->
+  <div data-role="page" class="ui-responsive-panel">
+
+    <!-- Start Panel-->
+    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
+      
+      <div class="right">
+        <form class="lang">
+          <input type="button" data-role="none" value="VN" class="active">
+          <input type="button" data-role="none" value="ENG">
+          </form>
+      </div>
+
+      <h3 class="hi"> <a href="#mypanel"><i class="icon three-bar back"></i></a>Hi User</h3>
+
+      <ul data-role="listview" class="side-menu">
+        <li class="divider"> Dashboard</li>
+        <li><a class="ui-btn no-hover" href="balance.html"><i class="icon side-balance"></i>Balance</a></li>
+        <li><a class="ui-btn no-hover" href="buy-package.html"><i class="icon side-buy-package"></i>Buy Package</a></li>
+        <li><a class="ui-btn no-hover" href="reload-balance.html"><i class="icon side-reload-balance"></i>Reload Balance</a></li>
+        <li><a class="ui-btn no-hover" href="info-promo.html"><i class="icon side-promo"></i>Info Promo</a></li>
+        <div class="spacer"></div>
+
+        <li class="divider"> Profile</li>
+        <li><a class="ui-btn no-hover" href="profile.html"><i class="icon side-profil"></i>Profile</a></li>
+        <li><a class="ui-btn no-hover" href="inbox.html"><i class="icon side-inbox"></i>Inbox</a></li>
+        <li><a class="ui-btn no-hover" href="change-password.html"><i class="icon side-change-password"></i>Change Password</a></li>
+        <div class="spacer"></div> 
+
+        <li class="divider"> Application & Setting</li>
+        <li><a class="ui-btn no-hover" href="info-and-help.html#"><i class="icon side-info"></i>Info & Help</a></li>
+        <li><a class="ui-btn no-hover" href="about-mobifone.html"><i class="icon side-about"></i>About Mobifone</a></li>
+        <li><a class="ui-btn no-hover" href="logout.html"><i class="icon side-logout"></i>Logout</a></li> 
+        <div class="spacer"></div>
+      </ul>          
+    
+    </div><!-- end panel -->
+
+    <!-- start header-->
+    <div data-role="header" class="header-content"> 
+
+        <div class="header mobifone">
+          <a href="#">
+            <img src="images/Mobifone_Logo_small.png">
+          </a>       
+          <div class="right">
+            <a href="#mypanel"><i class="icon three-bar"></i></a>
+            <a href="inbox.html"><i class="icon message"></i></a>
+          </div>
+        </div>
+
+        <div class="header account">
+          <div class="left">
+            <p><i class="icon-top balance"></i>Check Balance</p>
+          </div>           
+          <div class="right">
+            <a href="#"><i class="icon reload"></i></a>
+          </div>
+        </div>
+
+        <div class="header phone-number yellow-border">
+          <div class="left">
+            <p>081807770365</p>
+          </div>
+          <div class="right">
+            <p class="caps">Mozilla Firefox</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- end header -->
+
+
+      <!-- start main content-->
+      <div role="main" class="ui-content main-mobifone">
+
+        <div class="ui-body status-bar dark yellow-border">
+
+            <div class="left">
+              <p> Your Balance</p>
+              <h2>VND.350</h3>              
+            </div>
+
+            <div class="right">
+              <p> Active Until</p>
+              <h3>20 september 2015</h3>  
+            </div>
+
+        </div>
+
+        <h3 class="ui-bar title">Setting</h3>
+
+        <div class="ui-body listmenu-mobifone">
+          <ul data-role="listview">
+            <li><a href="buy-package.html" class="ui-btn red1"><i class="menu-icon buy-pkg-setting"></i>Buy Package<i class="icon right-arrow-white"></i></a></li>
+            <li class="yellow-border"><a href="reload-balance.html" class="ui-btn red2"><i class="menu-icon reload-balance"></i>Reload Balance<i class="icon right-arrow-white"></i></a></li>           
+          </ul>
+          <div class="spacer"></div>
+        </div>
+
+        <h3 class="ui-bar title">History</h3>
+
+        <div class="ui-body listmenu-mobifone">
+          <ul data-role="listview">
+            <li><a href="utilization.html" class="ui-btn blue1"><i class="menu-icon utilization"></i>Utilization<i class="icon right-arrow-white"></i></a></li>
+            <li><a href="purchase-package.html" class="ui-btn blue2"><i class="menu-icon buy-pkg"></i>Purchase package<i class="icon right-arrow-white"></i></a></li>
+            <li><a href="reload-voucher.html" class="ui-btn blue3"><i class="menu-icon reload-balance"></i>Reload Voucher<i class="icon right-arrow-white"></i></a></li>
+          </ul>
+          <div class="spacer"></div>
+        </div>
+
+
+        
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div> 
+        <div class="spacer"></div>     
+        <div class="spacer"></div>
+      </div><!-- /content -->
+
+      <div data-role="footer">
+        <div class="footer-mobifone">
+          <div class="left">
+            <p>CS Hotline</p>
+            <h2>9090</h2>
+          </div>
+
+          <div class="right">
+            <p class="small">
+              <b>copyright 2015 © mobifone</b><br>
+               lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, <br> sed diam nonummy nibh euismod volutpa
+            </p>
+          </div>
+        </div>
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+</html>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 600) {
+           // console.log("hey lebar");
+           
+             
+    $('#mypanel').panel("open");
+    
+        }
+        else {  $('#mypanel').panel("close");
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
+</script>
