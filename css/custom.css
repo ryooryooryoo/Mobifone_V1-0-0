@@ -1,0 +1,53 @@
+body{
+	font-family: 'Myriad Pro Regular';
+}
+
+#mypanel{
+	background: #222;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.no-border-padding{
+	margin: 0px;
+	padding: 0px;
+}
+
+.lang input[type=button]{
+	color: #fff;
+	border: none;
+	font-size: 14px;
+	width: 50px;
+	float: left;
+	background: #8a8a8a;
+}
+
+.lang input[type=button].active{
+	background: #0368b9;
+}
+
+.hi{
+	color: #f9f14c;
+	margin-top: 50px;
+}
+
+.side-menu li a{
+	font-weight: normal;
+	border: none!important;
+}
+
+.no-hover:hover{
+	background:none!important;
+	border: none!important;
+}
+
+.side-menu li.divider{
+	background: #333;
+	color: #6ddaf3;
+}
