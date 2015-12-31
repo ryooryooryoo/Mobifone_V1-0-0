@@ -4918,7 +4918,6 @@ em[data-type="buy-pkg"]{
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
-
 em[data-type="buy-pkg-setting"]{
 	background-image:url("../images/buy_pkg-setting.png");	
 	background-size:30px;
@@ -4946,6 +4945,90 @@ em[data-type="info-promo"]{
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
+em[data-type="health-beauty-ico"]{
+	background-image:url("../images/health_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="leisure-ico"]{
+	background-image:url("../images/leisure_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="restaurant-ico"]{
+	background-image:url("../images/restauran_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="education-ico"]{
+	background-image:url("../images/education_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+
+em[data-type="sport-ico"]{
+	background-image:url("../images/sport_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+
+em[data-type="airlines-ico"]{
+	background-image:url("../images/airlines_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+
+em[data-type="internet-package"]{
+	background-image:url("../images/internet_pkg_bottom.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="telephone-package"]{
+	background-image:url("../images/telephone_pkg_bottom.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="sms-package"]{
+	background-image:url("../images/sms_pkg_bottom.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="combo-package"]{
+	background-image:url("../images/combo_pkg_bottom.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+
+em[data-type="create-package"]{
+	background-image:url("../images/create_pkg_bottom.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+em[data-type="quota-meter"]{
+	background-image:url("../images/quota_meter_ico.png");
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 10px;
+}
+em[data-type="stop-quota"]{
+	background-image:url("../images/stop_quota_ico.png");
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 10px;
+}
+
+
 
 i[data-type="check"]{
 	background-image:url("../images/check.png");	
