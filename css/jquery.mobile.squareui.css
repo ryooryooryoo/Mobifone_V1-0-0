@@ -4985,35 +4985,41 @@ em[data-type="airlines-ico"]{
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
+em[data-type="consumer-ico"]{
+	background-image:url("../images/airlines_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
 
 em[data-type="internet-package"]{
 	background-image:url("../images/internet_pkg_bottom.png");	
-	background-size:30px;
+	background-size:26px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="telephone-package"]{
 	background-image:url("../images/telephone_pkg_bottom.png");	
-	background-size:30px;
+	background-size:26px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="sms-package"]{
 	background-image:url("../images/sms_pkg_bottom.png");	
-	background-size:30px;
+	background-size:26px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="combo-package"]{
 	background-image:url("../images/combo_pkg_bottom.png");	
-	background-size:30px;
+	background-size:26px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 
 em[data-type="create-package"]{
 	background-image:url("../images/create_pkg_bottom.png");	
-	background-size:30px;
+	background-size:26px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
