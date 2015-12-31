@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <title>Mobifone</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script> 
+
+
+</head>
+<body>
+  
+  <!--Start Page-->
+  <div data-role="page" class="sticky ui-responsive-panel">
+
+   
+
+    <!-- start header-->
+    <div data-role="header" class="header-content"> 
+
+        <div class="header mobifone ">
+          <a href="#">
+            <img src="images/Mobifone_Logo_small.png">
+          </a>       
+          <div class="right">
+        <form class="lang">
+          <input type="button" data-role="none" value="VN" class="active">
+          <input type="button" data-role="none" value="ENG">
+         </form>
+      </div>
+        </div>
+
+    </div>
+    <!-- end header -->
+
+
+    <!-- start main content-->
+    <div role="main" class="ui-content main-mobifone">
+
+    <div class="ui-body login ">
+      <h1 class="logo" >
+        <img src="images/logo.png">
+      </h1>
+      
+
+      <form>
+        <input type="text" name="text-basic" id="text-basic" value="Your Phone Number">
+        <input type="password" name="password" id="password" value="Password" autocomplete="off">
+      </form>
+
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <form>          
+            <input type="submit" value="Login" class="blue1" data-role="none">
+          </form>
+        </div>
+        <div class="ui-block-b">
+          <form>
+            <label class="checkbox">
+              <input type="checkbox" name="checkbox-0" data-role="none" >Remember Me
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <form>
+        <p class="small-2">Forget password/Don't have password ?</p>
+        <input type="submit" value="Request Password" class="red2 small-button small-2" data-role="none">
+      </form>
+
+    </div>
+
+
+
+        
+
+    </div><!-- /content -->
+
+      <div data-role="footer" class="sticky">
+        <div class="footer-mobifone">
+          <div class="left">
+            <p>CS Hotline</p>
+            <h2>9090</h2>
+          </div>
+
+          <div class="right">
+            <p class="small">
+              <b>copyright 2015 © mobifone</b><br>
+               lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, <br> sed diam nonummy nibh euismod volutpa
+            </p>
+          </div>
+        </div>
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+</html>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 600) {
+           // console.log("hey lebar");
+           
+             
+    $('#mypanel').panel("open");
+    
+        }
+        else {  $('#mypanel').panel("close");
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
+</script>
