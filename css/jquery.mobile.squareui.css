@@ -4705,6 +4705,11 @@ p[data-type="buy-pkg-round"]{
     background-position: 2px 4px;
 	
 }
+p[data-type="reload-balance"]{
+	background-image:url("../images/check_balance_head_ico.png");	
+	    background-size: 25px;
+    background-position: 0px -1px;
+}
 
 em[data-type="three-bar"]{
 	margin-top: 0px;
