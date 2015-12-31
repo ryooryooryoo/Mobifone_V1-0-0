@@ -4894,7 +4894,7 @@ background-color:#005da7;
 }
 
 .blue4{
-background-color:red;
+background-color:#03518f;
 }
 
 
@@ -5224,7 +5224,7 @@ background: #fff;
 .meter span {
   float: left;
   height: 100%;
-  background: #a8d306;
+  background: #c2211a;
  
   margin-right: -15px;
 -webkit-box-shadow: inset 0px 0px 25px -6px rgba(0,0,0,0.30);
@@ -5243,7 +5243,7 @@ box-shadow: inset 0px 0px 25px -6px rgba(0,0,0,0.30);
 	width: 30px;
 	line-height: 30px;
 	height: 30px;
-	background: #6e942b;
+	background: #2597f1;
 	float: left;
 	text-align: center;
 	font-size: 8pt;
@@ -5281,6 +5281,16 @@ b.text-red{
 }
 
 
-.small-list ul li a{
+ul li a.small-list {
 	padding: 15px 10px;
+	border-bottom: 1px solid #fff;
 }
+
+.blue-a{background: #00579c;}
+.blue-b{background: #02508e;}
+.blue-c{background: #024982;}
+.blue-d{background: #014174;}
+.blue-e{background: #013a68;}
+.blue-f{background: #01345d;}
+.blue-g{background: #012d4f;}
+
