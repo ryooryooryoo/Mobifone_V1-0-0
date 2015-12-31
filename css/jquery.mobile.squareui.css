@@ -4872,6 +4872,11 @@ background-color:#0069bd;
 background-color:#005da7;
 }
 
+.blue4{
+background-color:red;
+}
+
+
 em[data-type="check-pkg"]{
 	background-image:url("../images/check_pkg_ico.png");
 	background-size:30px;
@@ -4893,6 +4898,14 @@ em[data-type="buy-pkg"]{
 	background-position: 0px 15px;
 }
 
+em[data-type="buy-pkg-setting"]{
+	background-image:url("../images/buy_package_setting_ico.png");	
+	background-size:30px;
+	padding: 20px 20px 20px 40px;	
+	background-position: 0px 15px;
+}
+
+
 em[data-type="reload-balance"]{
 	background-image:url("../images/reload_balance_ico.png");	
 	background-size:30px;
@@ -4908,6 +4921,14 @@ em[data-type="info-promo"]{
 	background-position: 0px 15px;
 }
 
+i[data-type="check"]{
+	background-image:url("../images/check.png");	
+	background-size:15px;
+	background-position: 0px 2px;
+
+
+
+}
 
 
 .login{
@@ -5135,33 +5156,42 @@ background: red;
 }
 
 .status-quota{
-	padding: 10px;
+	
+	padding:0px 10px 10px 10px;
+	background: #eee;
+
 }
 
-.meter, .status-quota-package { 
+.meter{ 
 
 	height: 40px;  /* Can be anything */
 	position: relative;
-
+background: #fff;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	
-	-webkit-box-shadow: inset 0px 0px 25px -6px rgba(0,0,0,0.30);
--moz-box-shadow: inset 0px 0px 25px -6px rgba(0,0,0,0.30);
-box-shadow: inset 0px 0px 25px -6px rgba(0,0,0,0.30);
+
 
 }
 .status-quota-package{
 	padding: 10px;
-	height: 20px;
+	height: 15px;
 	margin-bottom: 10px;
+
+background: #fff;
+
+-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
 
 }
 
 .status-quota-package i{
 	font-style: normal;
 	color: #333;
+	-webkit
 }
 
 
@@ -5214,4 +5244,17 @@ i.text-red{
 
 b.text-red{
 	color: #da271f;
+}
+
+
+.list-collapse h3.other-package a{
+	background-image: none!important;
+	border: none;
+
+
+}
+
+
+.small-list ul li a{
+	padding: 15px 10px;
 }
