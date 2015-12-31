@@ -4493,7 +4493,9 @@ div.navbar-mobifone.ui-navbar a.active{
 .spacer{
 	height: 20px;
 }
-
+.spacer-2{
+	height: 60px;
+}
 .caps{
 	text-transform: uppercase;
 }
@@ -5273,18 +5275,27 @@ b.text-red{
 }
 
 
-.list-collapse h3.other-package a{
+.list-collapse h3.faq a{
 	background-image: none!important;
-	border: none;
+	border-bottom: 1px solid #fff;
+}
 
+p.faq-text{
+margin: 0px;
+padding: 10px;
 
 }
 
+div.ui-collapsible-content{
+	padding: 0px;
+}
 
 ul li a.small-list {
 	padding: 15px 10px;
 	border-bottom: 1px solid #fff;
 }
+
+
 
 .blue-a{background: #00579c;}
 .blue-b{background: #02508e;}
@@ -5293,4 +5304,30 @@ ul li a.small-list {
 .blue-e{background: #013a68;}
 .blue-f{background: #01345d;}
 .blue-g{background: #012d4f;}
+
+.my-profile {
+	background: #eee;
+}
+
+.my-profile input[type="text"]{
+	background: #eee;
+	border: none;
+	box-shadow: none;
+	color: #000;
+	font-weight:bold;
+}
+
+.my-profile label{
+	font-size: 10pt;
+	line-height: 30px;
+}
+
+.no-margin-padding-bottom{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.sue{
+	height: 500px;
+}
 

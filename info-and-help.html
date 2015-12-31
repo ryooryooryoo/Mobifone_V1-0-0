@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <title>Mobifone</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script> 
+
+
+</head>
+<body>
+  
+  <!--Start Page-->
+  <div data-role="page" class="ui-responsive-panel">
+
+    <!-- Start Panel-->
+    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
+      
+      <div class="right">
+        <form class="lang">
+          <input type="button" data-role="none" value="VN" class="active">
+          <input type="button" data-role="none" value="ENG">
+         </form>
+      </div>
+
+
+     <h3 class="hi">  <a href="#mypanel"><em data-type="back-panel"></em></a>Hi User</h3>
+
+      <ul data-role="listview" class="divide">
+          <li> Dashboard</li>
+      </ul>
+
+      <ul class="menu-panel">        
+        <li data-type="side-balance"><a href="balance.html">Balance</a></li>
+        <li data-type="side-buy-pkg"><a href="buy-package.html">Buy Package</a></li>
+        <li data-type="side-reload-balance"><a href="reload-balance.html">Reload Balance</a></li>
+        <li data-type="side-info-promo"><a href="info-promo.html">Info Promo</a></li>
+       </ul>
+       <div class="spacer"></div>
+
+      <ul data-role="listview" class="divide">
+          <li> Profile</li>
+      </ul>
+
+      <ul class="menu-panel">        
+        <li data-type="side-profile"><a href="profile.html">Profile</a></li>
+        <li data-type="side-inbox"><a href="inbox.html">Inbox</a></li>
+        <li data-type="side-change-password"><a href="change-password.html">Change Password</a></li>        
+      </ul>
+
+      <div class="spacer"></div>
+
+      <ul data-role="listview" class="divide">
+          <li> Application & Setting</li>
+      </ul>
+
+      <ul class="menu-panel">        
+        <li data-type="side-info-and-help"><a href="info-and-help.html">Info & Help</a></li>
+        <li data-type="side-about-mobi"><a href="about-mobifone.html">About Mobifone</a></li>      
+        <li data-type="side-logout"><a href="logout.html">Logout</a></li>     
+      </ul>
+      <div class="spacer"></div>
+
+    </div><!-- end panel -->
+
+    <!-- start header-->
+    <div data-role="header" class="header-content"> 
+
+        <div class="header mobifone">
+          <a href="#">
+            <img src="images/Mobifone_Logo_small.png">
+          </a>       
+          <div class="right">
+            <a href="#mypanel"><em data-type="three-bar" class="icon-data"></em></a>   
+            <a href="#inbox.html"><em data-type="inbox-page" class="icon-data"></em></a>           
+          </div>
+        </div>
+
+        <div class="ui-body account">
+            <div class="left">
+              <p class="icon-data" data-type="personalize-package"> Info and Help</p>                          
+            </div>
+           
+        </div>
+
+        <div class="header phone-number yellow-border">
+          <div class="left">
+            <p>081807770365</p>
+          </div>
+          <div class="right">
+            <p class="caps">Mozilla Firefox</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- end header -->
+
+
+      <!-- start main content-->
+      <div role="main" class="ui-content main-mobifone">
+
+
+      <h3 class="ui-bar title">Frequently Asked Question (FAQ)</h3>
+
+       <div data-role="collapsible-set" data-icon="false">
+          <div data-role="collapsible"  data-icon="false" data-iconpos="right" data-collapsed-icon="carat-l-" data-expanded-icon="carat-d-" class="list-collapse">
+            <h3 class="blue4 faq" >What is Mobifone ?</h3>
+            <p class="textured faq-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+
+            </p>
+          </div>
+          <div data-role="collapsible"  data-icon="false" data-iconpos="right" data-collapsed-icon="carat-l-" data-expanded-icon="carat-d-" class="list-collapse">
+            <h3 class="blue4 faq" >How to Accses ?</h3>
+            <p class="textured faq-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              
+            </p>
+          </div>
+          <div data-role="collapsible"  data-icon="false" data-iconpos="right" data-collapsed-icon="carat-l-" data-expanded-icon="carat-d-" class="list-collapse">
+            <h3 class="blue4 faq" >How to buy packages ?</h3>
+            <p class="textured faq-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              
+            </p>
+          </div>
+          <div data-role="collapsible"  data-icon="false" data-iconpos="right" data-collapsed-icon="carat-l-" data-expanded-icon="carat-d-" class="list-collapse">
+            <h3 class="blue4 faq" >How to check quota ?</h3>
+            <p class="textured faq-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              
+            </p>
+          </div>
+          
+        </div>
+        <div class="spacer-2"></div>
+        <div class="spacer-2"></div>
+     
+     <div class="spacer-2"></div>
+     
+
+     <div class="spacer-2"></div>
+     <div class="spacer-2"></div>
+     
+     
+
+        
+
+     
+
+    
+      
+       
+        
+      </div><!-- /content -->
+
+      <div data-role="footer">
+        <div class="footer-mobifone">
+          <div class="left">
+            <p>CS Hotline</p>
+            <h2>9090</h2>
+          </div>
+
+          <div class="right">
+            <p class="small">
+              <b>copyright 2015 © mobifone</b><br>
+               lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, <br> sed diam nonummy nibh euismod volutpa
+            </p>
+          </div>
+        </div>
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+</html>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 600) {
+           // console.log("hey lebar");
+           
+             
+    $('#mypanel').panel("open");
+    
+        }
+        else {  $('#mypanel').panel("close");
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
+</script>
