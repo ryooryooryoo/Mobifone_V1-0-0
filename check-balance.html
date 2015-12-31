@@ -17,7 +17,7 @@
   <div data-role="page" class="ui-responsive-panel">
 
     <!-- Start Panel-->
-    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
+    <div data-role="panel" id="mypanel"  data-position="left" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
       
       <div class="right">
         <form class="lang">
@@ -170,12 +170,12 @@
  $(document).ready(function() {
     // Optimalisation: Store the references outside the event handler:
     var $window = $(window);
-    var $pane = $('#pane1');
+    var $panel = $('#panel');
 
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize > 600) {
-           // console.log("hey lebar");
+           console.log("hey lebar");
            
              
     $('#mypanel').panel("open");
@@ -188,5 +188,8 @@
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
+
+
 });
 </script>
+

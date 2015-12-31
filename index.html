@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
   <title>Mobifone</title>
+  <meta http-equiv="refresh">
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery.mobile-1.4.0.min.js"></script> 
@@ -17,7 +18,7 @@
   <div data-role="page" class="ui-responsive-panel">
 
     <!-- Start Panel-->
-    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
+    <div data-role="panel" id="mypanel" data-display="push" data-position="left"  data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
       
       <div class="right">
         <form class="lang">
@@ -33,11 +34,11 @@
           <li> Dashboard</li>
       </ul>
 
-      <ul class="menu-panel">        
-        <li data-type="side-balance"><a href="balance.html">Balance</a></li>
-        <li data-type="side-buy-pkg"><a href="buy-package.html">Buy Package</a></li>
-        <li data-type="side-reload-balance"><a href="reload-balance.html">Reload Balance</a></li>
-        <li data-type="side-info-promo"><a href="info-promo.html">Info Promo</a></li>
+      <ul data-role="list-view" class="menu-panel">        
+        <li data-type="side-balance"><a href="check-balance.html" target="_parent">Balance</a></li>
+        <li data-type="side-buy-pkg"><a href="buy-package.html" target="_parent">Buy Package</a></li>
+        <li data-type="side-reload-balance"><a href="reload-balance.html" target="_parent">Reload Balance</a></li>
+        <li data-type="side-info-promo"><a href="info-promo.html" target="_parent">Info Promo</a></li>
        </ul>
        <div class="spacer"></div>
 
@@ -182,12 +183,12 @@
  $(document).ready(function() {
     // Optimalisation: Store the references outside the event handler:
     var $window = $(window);
-    var $pane = $('#pane1');
+    var $panel = $('#panel');
 
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize > 600) {
-           // console.log("hey lebar");
+           console.log("hey lebar");
            
              
     $('#mypanel').panel("open");
@@ -200,5 +201,9 @@
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
+
+
 });
 </script>
+
+
