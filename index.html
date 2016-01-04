@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
   <title>Mobifone</title>
-  <meta http-equiv="refresh">
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery.mobile-1.4.0.min.js"></script> 
@@ -15,151 +14,73 @@
 <body>
   
   <!--Start Page-->
-  <div data-role="page" class="ui-responsive-panel">
+  <div data-role="page" class="sticky ui-responsive-panel">
 
-    <!-- Start Panel-->
-    <div data-role="panel" id="mypanel" data-display="push" data-position="left"  data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
-      
-      <div class="right">
+   
+
+    <!-- start header-->
+    <div data-role="header" class="header-content"> 
+
+        <div class="header mobifone ">
+          <a href="#">
+            <img src="images/Mobifone_Logo_small.png">
+          </a>       
+          <div class="right">
         <form class="lang">
           <input type="button" data-role="none" value="VN" class="active">
           <input type="button" data-role="none" value="ENG">
          </form>
       </div>
-
-
-     <h3 class="hi">  <a href="#mypanel"><em data-type="back-panel"></em></a>Hi User</h3>
-
-      <ul data-role="listview" class="divide">
-          <li> Dashboard</li>
-      </ul>
-
-      <ul data-role="list-view" class="menu-panel">        
-        <li data-type="side-balance"><a href="check-balance.html" target="_parent">Balance</a></li>
-        <li data-type="side-buy-pkg"><a href="buy-package.html" target="_parent">Buy Package</a></li>
-        <li data-type="side-reload-balance"><a href="reload-balance.html" target="_parent">Reload Balance</a></li>
-        <li data-type="side-info-promo"><a href="info-promo.html" target="_parent">Info Promo</a></li>
-       </ul>
-       <div class="spacer"></div>
-
-      <ul data-role="listview" class="divide">
-          <li> Profile</li>
-      </ul>
-
-      <ul class="menu-panel">        
-        <li data-type="side-profile"><a href="profile.html">Profile</a></li>
-        <li data-type="side-inbox"><a href="inbox.html">Inbox</a></li>
-        <li data-type="side-change-password"><a href="change-password.html">Change Password</a></li>        
-      </ul>
-
-      <div class="spacer"></div>
-
-      <ul data-role="listview" class="divide">
-          <li> Application & Setting</li>
-      </ul>
-
-      <ul class="menu-panel">        
-        <li data-type="side-info-and-help"><a href="info-and-help.html">Info & Help</a></li>
-        <li data-type="side-about-mobi"><a href="about-mobifone.html">About Mobifone</a></li>      
-        <li data-type="side-logout"><a href="logout.html">Logout</a></li>     
-      </ul>
-      <div class="spacer"></div>
-
-    </div><!-- end panel -->
-
-    <!-- start header-->
-    <div data-role="header" class="header-content"> 
-
-        <div class="header mobifone">
-          <a href="#">
-            <img src="images/Mobifone_Logo_small.png">
-          </a>       
-          <div class="right">
-            <a href="#mypanel"><em data-type="three-bar" class="icon-data"></em></a>   
-            <a href="#inbox.html"><em data-type="inbox-page" class="icon-data"></em></a>           
-          </div>
         </div>
 
-        <div class="ui-body account">
-            <div class="left">
-              <p class="icon-data" data-type="my-account"> My Account</p>                          
-            </div>
-            <div class="right">
-              <a href="#"><p data-type="reload" class="icon-data"></p></a> 
-            </div>
-        </div>
+    </div>
+    <!-- end header -->
 
-        <div class="header phone-number yellow-border">
-          <div class="left">
-            <p>081807770365</p>
-          </div>
-          <div class="right">
-            <p class="caps">Mozilla Firefox</p>
-          </div>
-        </div>
 
+    <!-- start main content-->
+    <div role="main" class="ui-content main-mobifone">
+
+    <div class="ui-body login ">
+      <h1 class="logo" >
+        <img src="images/logo.png">
+      </h1>
+      
+
+      <form>
+        <input type="text" name="text-basic" id="text-basic" value="Your Phone Number">
+        <input type="password" name="password" id="password" value="Password" autocomplete="off">
+      </form>
+
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <form>          
+              <input type="button" value="Login" class="blue1" data-role="none" onclick="location.href='home.html';">
+    
+          </form>
+        </div>
+        <div class="ui-block-b">
+          <form>
+            <label class="checkbox">
+              <input type="checkbox" name="checkbox-0" data-role="none" >Remember Me
+            </label>
+          </form>
+        </div>
       </div>
-      <!-- end header -->
+
+      <form>
+        <p class="small-2">Forget password/Don't have password ?</p>
+        <input type="submit" value="Request Password" class="red2 small-button small-2" data-role="none">
+      </form>
+
+    </div>
 
 
-      <!-- start main content-->
-      <div role="main" class="ui-content main-mobifone ">
 
+        
 
-        <div class="slideshow">
-          <div class="detail-slideshow">
-            <p><b>Your Ads here</b><br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            </p>
-          </div> 
-        </div>
+    </div><!-- /content -->
 
-        <div class="ui-grid-a list-menu">
-          <div class="ui-block-a"> 
-            <ul>        
-              <li><a href="check-pkg-and-quota.html" class="center blue1" ><em data-type="check-pkg" class="small-2">Check Package & Quota</em></a> </li>      
-            </ul>
-          </div>
-
-          <div class="ui-block-b">
-            <ul class="list-menu">        
-              <li><a href="custom-your-package.html" class="center blue3"><em data-type="custom-pkg" class="small-2">Custom Your Package</em></a> </li>      
-            </ul>
-          </div>          
-        </div>
-
-        <div class="ui-body status-bar">
-
-          <div class="left">
-            <p> Your Balance</p>
-            <h2>VND.350</h2>
-            <p>Active until <b>20th September 2015</b></p>  
-          </div>
-
-          <div class="right">
-            <a href="#mypanel"><em data-type="arrow-blue-right" class="icon-data"></em></a>  
-          </div>
-
-        </div>
-
-        <div class="ui-body list-menu">
-          <ul>        
-              <li><a href="custom-your-package.html" class="blue1"><em data-type="buy-pkg">Buy Package</em></a> </li> 
-              <li><a href="reload-balance.html" class="blue2"><em data-type="reload-balance">Reload Balance</em></a> </li>      
-              <li><a href="info-promo.html" class="blue3"><em data-type="info-promo">Info Promo</em></a> </li>  
-          </ul>
-
-        </div>
-
-       
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>      
-       
-      </div><!-- /content -->
-
-      <div data-role="footer">
+      <div data-role="footer" class="sticky">
         <div class="footer-mobifone">
           <div class="left">
             <p>CS Hotline</p>
@@ -183,12 +104,12 @@
  $(document).ready(function() {
     // Optimalisation: Store the references outside the event handler:
     var $window = $(window);
-    var $panel = $('#panel');
+    var $pane = $('#pane1');
 
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize > 600) {
-           console.log("hey lebar");
+           // console.log("hey lebar");
            
              
     $('#mypanel').panel("open");
@@ -201,9 +122,5 @@
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
-
-
 });
 </script>
-
-
