@@ -4705,11 +4705,18 @@ p[data-type="buy-pkg-round"]{
     background-position: 2px 4px;
 	
 }
-p[data-type="reload-balance"]{
-	background-image:url("../images/check_balance_head_ico.png");	
-	    background-size: 25px;
-    background-position: 0px -1px;
+/* add bangkit */
+p[data-type="my-inbox"]{
+	background-image:url("../images/mcg_icon.png");
+	background-size:20px;
+	background-position: 0px 0px;  
 }
+
+
+
+
+
+/* end */
 
 em[data-type="three-bar"]{
 	margin-top: 0px;
@@ -4990,41 +4997,35 @@ em[data-type="airlines-ico"]{
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
-em[data-type="consumer-ico"]{
-	background-image:url("../images/airlines_ico.png");	
-	background-size:30px;
-	padding: 20px 20px 20px 40px;	
-	background-position: 0px 15px;
-}
 
 em[data-type="internet-package"]{
 	background-image:url("../images/internet_pkg_bottom.png");	
-	background-size:26px;
+	background-size:30px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="telephone-package"]{
 	background-image:url("../images/telephone_pkg_bottom.png");	
-	background-size:26px;
+	background-size:30px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="sms-package"]{
 	background-image:url("../images/sms_pkg_bottom.png");	
-	background-size:26px;
+	background-size:30px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 em[data-type="combo-package"]{
 	background-image:url("../images/combo_pkg_bottom.png");	
-	background-size:26px;
+	background-size:30px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
 
 em[data-type="create-package"]{
 	background-image:url("../images/create_pkg_bottom.png");	
-	background-size:26px;
+	background-size:30px;
 	padding: 20px 20px 20px 40px;	
 	background-position: 0px 15px;
 }
@@ -5059,7 +5060,9 @@ i[data-type="check"]{
 	
 }
 
-input[type="submit"]{
+
+
+input[type="submit"],input[type="button"]{
 	color: #fff;
 	width: 100%;
 	border: none;
@@ -5194,7 +5197,7 @@ input.ui-slider-input {
 
 .history ul{
 	width: 100%;
-	height: 500px;
+	height: 800px;
 	margin-right: -150px !important;
  	overflow-y: scroll !important;
     overflow-x: hidden !important;

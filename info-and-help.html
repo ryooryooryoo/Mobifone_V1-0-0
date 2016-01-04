@@ -14,7 +14,7 @@
 <body>
   
   <!--Start Page-->
-  <div data-role="page" class="ui-responsive-panel">
+  <div data-role="page" class="ui-responsive-panel sticky">
 
     <!-- Start Panel-->
     <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
@@ -33,11 +33,11 @@
           <li> Dashboard</li>
       </ul>
 
-      <ul class="menu-panel">        
-        <li data-type="side-balance"><a href="balance.html">Balance</a></li>
-        <li data-type="side-buy-pkg"><a href="buy-package.html">Buy Package</a></li>
-        <li data-type="side-reload-balance"><a href="reload-balance.html">Reload Balance</a></li>
-        <li data-type="side-info-promo"><a href="info-promo.html">Info Promo</a></li>
+       <ul data-role="list-view" class="menu-panel">        
+        <li data-type="side-balance"><a href="check-balance.html" target="_parent">Balance</a></li>
+        <li data-type="side-buy-pkg"><a href="buy-package.html" target="_parent">Buy Package</a></li>
+        <li data-type="side-reload-balance"><a href="check-balance.html" target="_parent">Reload Balance</a></li>
+        <li data-type="side-info-promo"><a href="info-and-promo.html" target="_parent">Info Promo</a></li>
        </ul>
        <div class="spacer"></div>
 
@@ -46,9 +46,9 @@
       </ul>
 
       <ul class="menu-panel">        
-        <li data-type="side-profile"><a href="profile.html">Profile</a></li>
-        <li data-type="side-inbox"><a href="inbox.html">Inbox</a></li>
-        <li data-type="side-change-password"><a href="change-password.html">Change Password</a></li>        
+        <li data-type="side-profile"><a href="my-profile.html" target="_parent">Profile</a></li>
+        <li data-type="side-inbox"><a href="inbox.html" target="_parent">Inbox</a></li>
+        <li data-type="side-change-password"><a href="change-password.html" target="_parent">Change Password</a></li>        
       </ul>
 
       <div class="spacer"></div>
@@ -58,9 +58,9 @@
       </ul>
 
       <ul class="menu-panel">        
-        <li data-type="side-info-and-help"><a href="info-and-help.html">Info & Help</a></li>
-        <li data-type="side-about-mobi"><a href="about-mobifone.html">About Mobifone</a></li>      
-        <li data-type="side-logout"><a href="logout.html">Logout</a></li>     
+        <li data-type="side-info-and-help"><a href="info-and-help.html" target="_parent">Info & Help</a></li>
+        <li data-type="side-about-mobi"><a href="info-and-help.html" target="_parent">About Mobifone</a></li>      
+        <li data-type="side-logout"><a href="index.html" target="_parent">Logout</a></li>     
       </ul>
       <div class="spacer"></div>
 
@@ -70,12 +70,12 @@
     <div data-role="header" class="header-content"> 
 
         <div class="header mobifone">
-          <a href="#">
+          <a href="home.html" target="_parent">
             <img src="images/Mobifone_Logo_small.png">
           </a>       
           <div class="right">
             <a href="#mypanel"><em data-type="three-bar" class="icon-data"></em></a>   
-            <a href="#inbox.html"><em data-type="inbox-page" class="icon-data"></em></a>           
+            <a href="inbox.html" target="_parent"><em data-type="inbox-page" class="icon-data"></em></a>           
           </div>
         </div>
 
@@ -138,16 +138,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           </div>
           
         </div>
-        <div class="spacer-2"></div>
-        <div class="spacer-2"></div>
-     
-     <div class="spacer-2"></div>
-     
-
-     <div class="spacer-2"></div>
-     <div class="spacer-2"></div>
-     
-     
 
         
 
@@ -159,7 +149,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         
       </div><!-- /content -->
 
-      <div data-role="footer">
+      <div data-role="footer" class="sticky">
         <div class="footer-mobifone">
           <div class="left">
             <p>CS Hotline</p>

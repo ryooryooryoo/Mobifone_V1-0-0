@@ -17,7 +17,7 @@
   <div data-role="page" class="ui-responsive-panel">
 
     <!-- Start Panel-->
-    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
+    <div data-role="panel" id="mypanel"  data-position="left" data-display="push" data-swipe-close="false" data-dismissible="true" class="ui-responsive-panel" data-position-fixed="true">
       
       <div class="right">
         <form class="lang">
@@ -33,11 +33,11 @@
           <li> Dashboard</li>
       </ul>
 
-      <ul class="menu-panel">        
-        <li data-type="side-balance"><a href="balance.html">Balance</a></li>
-        <li data-type="side-buy-pkg"><a href="buy-package.html">Buy Package</a></li>
-        <li data-type="side-reload-balance"><a href="reload-balance.html">Reload Balance</a></li>
-        <li data-type="side-info-promo"><a href="info-promo.html">Info Promo</a></li>
+       <ul data-role="list-view" class="menu-panel">        
+        <li data-type="side-balance"><a href="check-balance.html" target="_parent">Balance</a></li>
+        <li data-type="side-buy-pkg"><a href="buy-package.html" target="_parent">Buy Package</a></li>
+        <li data-type="side-reload-balance"><a href="check-balance.html" target="_parent">Reload Balance</a></li>
+        <li data-type="side-info-promo"><a href="info-and-promo.html" target="_parent">Info Promo</a></li>
        </ul>
        <div class="spacer"></div>
 
@@ -46,9 +46,9 @@
       </ul>
 
       <ul class="menu-panel">        
-        <li data-type="side-profile"><a href="profile.html">Profile</a></li>
-        <li data-type="side-inbox"><a href="inbox.html">Inbox</a></li>
-        <li data-type="side-change-password"><a href="change-password.html">Change Password</a></li>        
+        <li data-type="side-profile"><a href="my-profile.html" target="_parent">Profile</a></li>
+        <li data-type="side-inbox"><a href="inbox.html" target="_parent">Inbox</a></li>
+        <li data-type="side-change-password"><a href="change-password.html" target="_parent">Change Password</a></li>        
       </ul>
 
       <div class="spacer"></div>
@@ -58,9 +58,9 @@
       </ul>
 
       <ul class="menu-panel">        
-        <li data-type="side-info-and-help"><a href="info-and-help.html">Info & Help</a></li>
-        <li data-type="side-about-mobi"><a href="about-mobifone.html">About Mobifone</a></li>      
-        <li data-type="side-logout"><a href="logout.html">Logout</a></li>     
+        <li data-type="side-info-and-help"><a href="info-and-help.html" target="_parent">Info & Help</a></li>
+        <li data-type="side-about-mobi"><a href="info-and-help.html" target="_parent">About Mobifone</a></li>      
+        <li data-type="side-logout"><a href="index.html" target="_parent">Logout</a></li>     
       </ul>
       <div class="spacer"></div>
 
@@ -70,20 +70,22 @@
     <div data-role="header" class="header-content"> 
 
         <div class="header mobifone">
-          <a href="#">
+          <a href="home.html" target="_parent">
             <img src="images/Mobifone_Logo_small.png">
           </a>       
           <div class="right">
             <a href="#mypanel"><em data-type="three-bar" class="icon-data"></em></a>   
-            <a href="#inbox.html"><em data-type="inbox-page" class="icon-data"></em></a>           
+            <a href="inbox.html" target="_parent"><em data-type="inbox-page" class="icon-data"></em></a>           
           </div>
         </div>
 
         <div class="ui-body account">
             <div class="left">
-              <p class="icon-data" data-type="reload-balance"> Check Balance</p>                          
+              <p class="icon-data" data-type="my-account"> My Account</p>                          
             </div>
-            
+            <div class="right">
+              <a href="#"><p data-type="reload" class="icon-data"></p></a> 
+            </div>
         </div>
 
         <div class="header phone-number yellow-border">
@@ -129,7 +131,7 @@
 
         <div class="ui-body list-menu">
           <ul>        
-              <li><a href="custom-your-package.html" class="blue1"><em data-type="Utilization-set">Utilization</em><div class="right"><em data-type="arrow-white-right"></em></div></a> </li> 
+              <li><a href="history-utilization.html" class="blue1"><em data-type="Utilization-set">Utilization</em><div class="right"><em data-type="arrow-white-right"></em></div></a> </li> 
               <li><a href="reload-balance.html" class="blue2"><em data-type="buy-pkg">Purchase Package</em><div class="right"><em data-type="arrow-white-right"></em></div></a> </li> 
               <li><a href="reload-balance.html" class="blue3"><em data-type="reload-balance">Reload Voucher</em><div class="right"><em data-type="arrow-white-right"></em></div></a> </li> 
           </ul>
@@ -168,12 +170,12 @@
  $(document).ready(function() {
     // Optimalisation: Store the references outside the event handler:
     var $window = $(window);
-    var $pane = $('#pane1');
+    var $panel = $('#panel');
 
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize > 600) {
-           // console.log("hey lebar");
+           console.log("hey lebar");
            
              
     $('#mypanel').panel("open");
@@ -186,5 +188,8 @@
     checkWidth();
     // Bind event listener
     $(window).resize(checkWidth);
+
+
 });
 </script>
+
