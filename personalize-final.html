@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <title>Mobifone</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0.min.js"></script> 
+
+
+</head>
+<body>
+  
+  <!--Start Page-->
+  <div data-role="page" class="ui-responsive-panel">
+
+    <!-- Start Panel-->
+    <div data-role="panel" id="mypanel" data-display="push" data-swipe-close="false" data-dismissible="false" class="ui-responsive-panel" data-position-fixed="true">
+      
+      <div class="right">
+        <form class="lang">
+          <input type="button" data-role="none" value="VN" class="active">
+          <input type="button" data-role="none" value="ENG">
+         </form>
+      </div>
+
+
+     <h3 class="hi">  <a href="#mypanel"><em data-type="back-panel"></em></a>Hi User</h3>
+
+      <ul data-role="listview" class="divide">
+          <li> Dashboard</li>
+      </ul>
+
+       <ul data-role="list-view" class="menu-panel">        
+        <li data-type="side-balance"><a href="check-balance.html" target="_parent">Balance</a></li>
+        <li data-type="side-buy-pkg"><a href="buy-package.html" target="_parent">Buy Package</a></li>
+        <li data-type="side-reload-balance"><a href="check-balance.html" target="_parent">Reload Balance</a></li>
+        <li data-type="side-info-promo"><a href="info-and-promo.html" target="_parent">Info Promo</a></li>
+       </ul>
+       <div class="spacer"></div>
+
+      <ul data-role="listview" class="divide">
+          <li> Profile</li>
+      </ul>
+
+      <ul class="menu-panel">        
+        <li data-type="side-profile"><a href="my-profile.html" target="_parent">Profile</a></li>
+        <li data-type="side-inbox"><a href="inbox.html" target="_parent">Inbox</a></li>
+        <li data-type="side-change-password"><a href="change-password.html" target="_parent">Change Password</a></li>        
+      </ul>
+
+      <div class="spacer"></div>
+
+      <ul data-role="listview" class="divide">
+          <li> Application & Setting</li>
+      </ul>
+
+      <ul class="menu-panel">        
+        <li data-type="side-info-and-help"><a href="info-and-help.html" target="_parent">Info & Help</a></li>
+        <li data-type="side-about-mobi"><a href="info-and-help.html" target="_parent">About Mobifone</a></li>      
+        <li data-type="side-logout"><a href="index.html" target="_parent">Logout</a></li>     
+      </ul>
+      <div class="spacer"></div>
+
+    </div><!-- end panel -->
+
+    <!-- start header-->
+    <div data-role="header" class="header-content"> 
+
+        <div class="header mobifone">
+          <a href="home.html" target="_parent">
+            <img src="images/Mobifone_Logo_small.png">
+          </a>       
+          <div class="right">
+            <a href="#mypanel"><em data-type="three-bar" class="icon-data"></em></a>   
+            <a href="inbox.html" target="_parent"><em data-type="inbox-page" class="icon-data"></em></a>           
+          </div>
+        </div>
+
+        <div class="ui-body account">
+            <div class="left">
+              <p class="icon-data" data-type="my-history"> Personalize Package</p>                          
+            </div>
+            
+        </div>
+
+        <div class="header phone-number yellow-border">
+          <div class="left">
+            <p>081807770365</p>
+          </div>
+          <div class="right">
+            <p class="caps">Mozilla Firefox</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- end header -->
+
+
+      <!-- start main content-->
+      <div role="main" class="ui-content main-mobifone">
+      <div class="spacer"></div>
+
+        <h3 class="ui-bar title">YOUR PERSONALIZE PACKAGE</h3>
+
+          <div class="ui-body icon-header">
+
+            <div class="list-personalize-package">
+              <div class="left">
+                <h3 data-type="personalize-phone"></h3>           
+              </div>
+              <div class="left">
+                <h3 class="no-margin-padding"><b> PHONE</b></h3>
+                <p class="no-margin-padding small-2">500 min Mobifone number + 10 min other number </p>              
+              </div>
+            </div>
+            <div class="list-personalize-package">
+              <div class="left">
+                <h3 data-type="personalize-phone"></h3>           
+              </div>
+              <div class="left">
+                <h3 class="no-margin-padding"><b> SMS</b></h3>
+                <p class="no-margin-padding small-2">400 SMS Mobifone number + 30 SMS other number </p>              
+              </div>
+            </div>
+            <div class="list-personalize-package">
+              <div class="left">
+                <h3 data-type="personalize-phone"></h3>           
+              </div>
+              <div class="left">
+                <h3 class="no-margin-padding"><b> INTERNET</b></h3>
+                <p class="no-margin-padding small-2">1.5GB 3G 00-24 + 1.5GB 00-06</p>              
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ui-body header-price">
+            <span class="small-2">Price</span>
+            <h1 class="no-margin-padding big-4">VND123</h1>
+            <span class="small-2">Your package active period 30 Days </span>
+          </div>
+
+          
+       
+         
+          <div class="ui-body header-personalize-final">
+             <h3 class=" small-2 ">Make it personalize! Give a name to your own package</h3>
+             <form>
+              <input type="text" value="15 Character minimum">
+              <input type="submit" value="CONTINUE" data-role="none" class="submit-button blue1 right">
+              <input type="submit" value="CHANGE" data-role="none" class="submit-button red1 right">
+            </form>
+          </div>
+          <div class="spacer-2"></div>
+    
+      </div><!-- /content -->
+
+      <div data-role="footer">
+        <div class="footer-mobifone">
+          <div class="left">
+            <p>CS Hotline</p>
+            <h2>9090</h2>
+          </div>
+
+          <div class="right">
+            <p class="small">
+              <b>copyright 2015 © mobifone</b><br>
+               lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, <br> sed diam nonummy nibh euismod volutpa
+            </p>
+          </div>
+        </div>
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+</html>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 600) {
+           // console.log("hey lebar");
+           
+             
+    $('#mypanel').panel("open");
+    
+        }
+        else {  $('#mypanel').panel("close");
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
+</script>

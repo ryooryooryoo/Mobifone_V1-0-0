@@ -783,7 +783,8 @@ button.ui-btn,
 button.ui-btn-inline {
 	width: auto;
 }
-/* Firefox adds a 1px border in a button element. We negate this to make sure they have the same height as other buttons in controlgroups. */
+/* Firefox adds a 1px border in a button element. We negate this to make sure they have 
+the same height as other buttons in controlgroups. */
 button.ui-btn::-moz-focus-inner {
 	border: 0;
 }
@@ -812,7 +813,9 @@ button.ui-btn-icon-notext,
 	overflow: hidden;
 	clip: rect(1px,1px,1px,1px);
 }
-/* Used for hiding elements by the filterable widget. You can also use this class to hide list items or buttons in controlgroups; this ensures correct corner styling. */
+/* Used for hiding elements by the filterable widget. You can also use this class to hide list items or 
+buttons in controlgroups;
+ this ensures correct corner styling. */
 .ui-screen-hidden {
 	display: none !important;
 }
@@ -1260,7 +1263,9 @@ button.ui-btn-icon-notext,
 }
 .flip {
 	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
+	-webkit-transform: translateX(0); /* Needed to work around an iOS 3.1
+	 bug that causes listview thumbs to disappear when -webkit-visibility:hidden 
+	is used. */
 	-moz-backface-visibility: hidden;
 	-moz-transform: translateX(0);
 	backface-visibility: hidden;
@@ -1361,7 +1366,9 @@ button.ui-btn-icon-notext,
 }
 .turn {
 	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
+	-webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that 
+	causes listview thumbs to disappear when -webkit-visibility:hidden 
+	is used. */
 	-webkit-transform-origin: 0;
 	
 	-moz-backface-visibility: hidden;
@@ -2187,7 +2194,9 @@ fieldset.ui-controlgroup {
 	position: absolute !important; /* See issues #4816, #4844 and #4874 and popup.js */
 }
 .ui-popup-screen {
-	background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); /* Necessary to set some form of background to ensure element is clickable in IE6/7. While legacy IE won't understand the data-URI'd image, it ensures no additional requests occur in all other browsers with little overhead. */
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); 
+	/* Necessary to set some form of background to ensure element is clickable in IE6/7. While legacy IE won't understand the data-URI'd image,
+	 it ensures no additional requests occur in all other browsers with little overhead. */
 	top: 0;
 	left: 0;
 	right: 0;
@@ -3843,7 +3852,7 @@ for Android 4.1 */
 	}
 	.ui-panel-closed {  width: 17em!important; }
 
-		 .ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed{     margin-left:17em; }
+		 .ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed{     margin-right:17em; }
 }
 .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
@@ -4426,7 +4435,7 @@ div.header.mobifone{
 .account{
 	background:url('../images/shadow-bot.png') top left #f9f9f9;
 	background-repeat: repeat-x;
-	padding: 0px 10px;
+	padding: 0px 0 0 10px;
 }
 
 
@@ -4564,6 +4573,7 @@ i{
 
 .red1{ background: #da251d; }
 .red2{ background: #c1211a; }
+.red3{ background: #980000; }
 
 .listmenu-mobifone ul li a.ui-btn.own-package{
 	background: #0074d0;
@@ -4628,7 +4638,7 @@ ul.menu-panel{
 
 }
 
-*[data-type="utilization"]{
+*[data-type="history-utilization"]{
 background-image:url("../images/utilization-grey_ico.png");
 background-size:50px;
 padding: 25px;
@@ -4638,9 +4648,18 @@ margin-left: 0px;
 margin-top: 0px;
 margin-bottom: 0px;
 margin-right: 5px;
+}
 
-
-
+*[data-type="personalize-phone"]{
+background-image:url("../images/phone.png");
+background-size:20px;
+padding: 25px;
+background-repeat: no-repeat;
+background-position:5px 5px;
+margin-left: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
 }
 
 .block{
@@ -4794,6 +4813,9 @@ em[data-type="back-panel"]{
 	font-size: 22pt;
 }
 
+.big-4{
+	font-size: 28pt;
+}
 
 .small{
 	font-size: 8pt;
@@ -4808,7 +4830,7 @@ em[data-type="back-panel"]{
 }
 
 .grey{
-	color: #888;
+	color: #888!important;
 }
 
 .black{
@@ -5076,6 +5098,13 @@ input[type="submit"].small-button{
 	padding: 5px 20px;
 }
 
+input[type="submit"].submit-button{
+	width: 200px;
+	padding: 15px 20px;
+	margin-top: 10px;
+}
+
+
 .ui-body.login{
 	width: 250px;
 	margin:auto auto;
@@ -5205,6 +5234,27 @@ input.ui-slider-input {
 
 }
 
+.history p.text-inbox{
+
+	padding-right: 150px;
+
+	text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 1.2em;
+ 
+}
+
+ul li a.list-inbox{
+
+
+}
+
+.left.300{
+	width: 360px;
+}
+
+
 *::-webkit-scrollbar { 
     display: none; 
 }
@@ -5220,7 +5270,7 @@ input.ui-slider-input {
 }
 
 .history ul li{
-background: red;
+
 }
 
 .history ul li a{
@@ -5230,6 +5280,15 @@ background: red;
 	border-left-color: #888;
 	margin-top: 1px;
 }
+
+
+ul li a.list-inbox{
+	background: url('../images/small_line.png')repeat-x bottom left,
+ url('../images/trash.png')no-repeat top right;
+	;
+
+}
+
 
 .history ul li a.active{
 	border-left-color: #e21c2c;	
@@ -5280,6 +5339,14 @@ background: red;
 	color: #fff;
 }
 
+.header-price{
+	text-align: center;
+	padding: 18px;
+	background:  #005191;
+	color: #fff;
+
+}
+
 .status-quota{
 	
 	padding:0px 10px 10px 10px;
@@ -5295,17 +5362,13 @@ background: #fff;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	
-
 
 }
 .status-quota-package{
 	padding: 10px;
 	height: 15px;
 	margin-bottom: 10px;
-
-background: #fff;
-
+	background: #fff;
 -moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -5426,5 +5489,82 @@ ul li a.small-list {
 
 .sue{
 	height: 500px;
+}
+
+.list-reload-balance{
+	color: #fff;
+	padding: 15px 15px;
+	
+						
+	
+}
+
+.list-personalize-package{
+
+	display: block;
+	border-bottom: 1px solid #aaa;
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.header-personalize-final{
+	padding: 10px;
+}
+
+.internet-pkg{
+	margin-top: 15px;
+	background:url('../images/package_bag_ico.png')no-repeat #2c9bda;
+	background-position: right 10px;
+	background-size: 200px;
+	padding: 10px; 
+
+
+}
+
+.internet-pkg h1,p{
+	margin:0px;
+	padding: 0px;
+
+
+}
+
+.internet-pkg.two{
+	background: #188acb;
+}
+
+
+
+.internet-pkg a{
+	text-align: center;
+	height: 162px;
+	width: 100%;
+	float: left;
+
+}
+
+.internet-pkg a span{
+
+	color: #fff;
+	font-size: 18pt;
+	border: 2px solid #fff;
+	padding: 20px;
+	line-height: 150px;
+}
+
+.color-blue-3{
+	color: #0c4573;
+}
+.color-white{
+	color: #fff;
+}
+
+.padding-left{
+	border-left: 5px solid #fff;
+}
+
+.internet-pkg.button-pkg{
+	background: #2c9bda;
+	height: 162px;
 }
 
